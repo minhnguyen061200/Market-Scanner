@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/flexslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    
+    <title> Something </title>  
+
+    <style>
+        
+        .faq-header {
+        font-family: Arial, Verdana;
+        font-weight: 600;
+        font-size: 2.2rem;
+        color: #000000;
+        text-transform: uppercase;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+
+        .col-25 {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+        }
+
+        .col-50 {
+            -ms-flex: 50%; /* IE10 */
+            flex: 50%;
+        }
+
+        .col-75 {
+            -ms-flex: 75%; /* IE10 */
+            flex: 75%;
+        }
+
+        .col-25,
+        .col-50,
+        .col-75 {
+            padding: 0 16px;
+            border-radius: 10px;
+        }
+
+        .container {
+            background-color: #EBEBEB;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgrey;
+            border-radius: 6px;
+        }
+
+        .checkout-info {
+            padding-left: 20px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+
+        hr {
+            border: 1px solid lightgrey;
+        }
+
+        span.price {
+            float: right;
+            color: grey;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        @media (max-width: 800px) {
+            .row {
+            }
+
+            .col-25 {
+                margin-bottom: 20px;
+            }
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px; /* Rounded borders */
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px; /* Rounded borders */
+            text-align: center;
+        }
+
+
+        /* Style the container/contact section */
+        .container {
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        /* Create two columns so that it  float next to eachother, bring your name... up to the right */
+        .column {
+            float: left;
+            width: auto;
+            margin-top: 10px;
+            padding: 60px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .message {
+            padding-top: 10px
+        }
+
+        input[type=tel] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 4px; /* Rounded borders */
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=email] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            margin-bottom: 16px;
+            margin-left: 0%;
+            resize: vertical;
+            border-radius: 4px;
+        }
+
+        #contactUsContainer {
+            border-radius: 15px;
+            margin-left: 15px;
+            background:#def2ff;
+            border : 1px solid #006eff;
+            border-radius: 15px;
+            width: auto;
+            }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<script src="js/main.js"></script>
+
+
+<!--- Top Navigation Part -->
+<nav class = "navbar navbar-expand-xl navbar-light bg-light">
+  <div>
+  <a class="navbar-brand" href="index.html">
+    <img src="img/ms-logo1.png" alt="Juice Earth Logo" style="margin: 0px;">
+  </a>  
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center sticky-top" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item d-flex flex-row-reverse"> 
+              <a class="nav-link" href="index.html"> Home </a>
+          </li>
+          <li class="nav-item"> 
+              <a class="nav-link d-flex flex-row-reverse" href="features.html"> Features </a>
+          </li>
+          <li class="nav-item"> 
+              <a class="nav-link d-flex flex-row-reverse" href="aboutus.html"> About Us </a>
+          </li>
+          <li class="nav-item"> 
+              <a class="nav-link d-flex flex-row-reverse" href="faq.html"> FAQ </a>
+          </li>
+          <li class="nav-item active"> 
+              <a class="nav-link d-flex flex-row-reverse" href="contactus.html"> Contact Us </a>
+          </li>
+      
+      <li><form class="form-inline justify-content-end">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form></li>
+
+      </ul> 
+  </div>
+</nav>
+
+
+<h2 class="faq-header" style="text-align: center;">Contact Us </h2>
+
+<div class="container" style="padding-bottom: 40px; background-color: rgb(220, 234, 255);">
+    <div class="row col-12 col-xs-12">
+        <div class="column col-xl-6 col-md-12 col-xs-12" id="contactUsContainer" style="background-color:floralwhite;">
+
+            <h2 style="text-align:center">Get in Touch with us!</h2>
+            <h4 style="text-align: center;"> If you have any questions, please do not hesistate to send us an email or give us a call</h4>
+
+            <div><img id="locationlogo" src="img/locationlogo.png" alt="Location Logo"
+                      style="height:80px;padding-left:0px;padding-top:10px;"> 124 La Trobe St, Melbourne VIC 3000
+            </div>
+            <br>
+            <div><img id="phonelogo" src="img/phonelogo.png" alt="Phone Logo"
+                      style="height:80px;padding-left:0px;padding-top:10px;"> (+61) 3 89044930
+            </div>
+            <br>
+            <div><img id="maillogo" src="img/mailLogo.png" alt="Mail Logo"
+                      style="height:80px;padding-left:0px;padding-top:10px;"> contactus@juice-earth.com
+            </div>
+        </div>
+
+        <div class="column col-xl-5 col-md-12 col-xs-12" style="padding: 50px; margin-left: auto; margin-top: auto;">
+            <h2 style="text-align: center;"> Or send us a message below! </h2>
+            <form method="POST" onsubmit="event.preventDefault();" id="contactForm">
+                <label for="yname"></label>
+                <input type="tel" id="yname" name="yourname" placeholder="Your name" style="min-width: auto;">
+
+                <div>
+                    <label for="formemail"></label>
+                    <input type="tel" id="formemail" name="contact[email]" placeholder="Your email">
+                </div>
+
+                <div class="number">
+                    <label for="contactFormTelephone"></label>
+                    <input type="tel" id="contactFormTelephone" name="contact[phone]" class="styled-input" value=""
+                           placeholder="Your number">
+                </div>
+                <div class="message">
+                    <label for="contactFormMessage"></label>
+                    <textarea required="required" rows="15" cols="40" id="contactFormMessage" name="contact[body]"
+                              class="styled-input" style="height:170px" placeholder="Message"></textarea>
+
+                </div>
+
+                <div class="contact-page-submit-button" style="text-align: center;">
+                    <input class="button styled-submit" style="background-color: rgb(0, 153, 255); color: rgb(255, 255, 255); font-weight: 600;"
+                           onclick="contactUsForm(document.getElementById('yname').value,
+                           document.getElementById('formemail').value,
+                           document.getElementById('contactFormTelephone').value,
+                           document.getElementById('contactFormMessage').value);"
+                           type="submit" id="contactFormSubmit" value="Send"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="mapouter">
+    <div class="gmap_canvas">
+        <iframe id="gmap_canvas"
+                src="https://maps.google.com/maps?q=RMIT%20University&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                style="min-height: 500px; min-width: 98vw;"
+                scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+        <style>.mapouter {
+                position: relative;
+                text-align: center;
+                height: 500px;
+                width: 100vw;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 500px;
+                width: 100vw;
+            }</style>
+    </div>
+</div>
+
+
+<div class="ignite-cta text-center" style="margin-top: 10px;">
+    <h2 style="margin: 0; top: 0; text-transform: capitalize;"> Get <span style="text-transform: uppercase;">Market Scanner </span> today!!</h2>
+    
+        <div class="row">
+            <div class="col-md-6 col-xs-6 col-sm-6">
+                <a href="product_catalogue.html" class="ignite-btn">Download NOW</a>
+            </div>
+            <div class="col-md-6 col-xs-6 col-sm-6">
+                <a href="product_catalogue.html" class="ignite-btn">Sign Up HERE</a>
+            </div>
+        </div>
+    
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-xs-12 mt-md-0 mt-3">
+            <div class="col-md-12">
+            <img src="img/ms-logo1.png" alt="Juice Earth Logo" style="margin: auto; display: block;">
+            <div class="footerTitle" style="font-size: 18px; font-weight: 900; text-align: center;">Market Scanner</div>
+            <p class="footerItems" style="font-weight: bold;">We are a team that brings the world of e-commerce closer.</p>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <div class="col-md-2 col-sm-6 mb-md-0 mb-3">
+            <span class="footerTitle">Explore</span>
+            <ul class="list-unstyled">
+                <li class="footerItems"><a href="index.html">Home</a></li>
+                <li class="footerItems"><a href="features.html">Feature</a></li>
+                <li class="footerItems"><a href="aboutus.html">About Us</a></li>
+                <li class="footerItems"><a href="faq.html">FAQ</a></li>
+                <li class="footerItems"><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-sm-6 mb-md-0 mb-3">
+            <span class="footerTitle">Visit</span>
+            <ul class="list-unstyled">
+                <span class="footerItems">124 La Trobe St,<br>Melbourne<br>VIC 3000</span>
+            </ul>
+        </div>
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-sm-6 mb-md-0 mb-3">
+            <span class="footerTitle">Follow</span>
+            <ul class="list-unstyled">
+                <li class="footerItems"><a href="#!">Blog</a></li>
+                <li class="footerItems"><a href="#!">Facebook</a></li>
+                <li class="footerItems"><a href="#!">Instagram</a></li>
+                <li class="footerItems"><a href="#!">Twitter</a></li>
+                <li class="footerItems"><a href="#!">YouTube</a></li>
+            </ul>
+        </div>
+
+        
+        <!-- Grid column -->
+        <div class="col-md-2 col-sm-6 mb-md-0 mb-3">
+            <span class="footerTitle">Legal</span>
+            <ul class="list-unstyled">
+                <li class="footerItems"><a href="#!">Terms of Use</a></li>
+                <li class="footerItems"><a href="#!">Privacy</a></li>
+                <li class="footerItems"><a href="#!">Security</a></li>
+            </ul>
+        </div>
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+
+    <div class="genericContainer" id="copyrightFooter">
+        <p>&copy; 2020 Market Scanner Ltd.</p>
+    </div>
+
+</footer>
+<!-- Footer -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+</body>
+</html>

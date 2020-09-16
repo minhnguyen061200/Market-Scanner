@@ -1,0 +1,1284 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+
+
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 6px 11px -6px rgba(0, 0, 0, 0.81);
+  max-height: 100px;
+}
+
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.genericContainer {
+  display: flex;
+}
+
+#menuItemsContainer {
+  position: absolute;
+  left: 38%;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 16px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+#menuItemsContainer a {
+  color: #37ab3f;
+  text-decoration: none;
+}
+
+#menuItemsContainer a:hover {
+  text-decoration: underline;
+  color: #222222;
+}
+
+.menuItem {
+  text-decoration: none;
+  padding-left: 8px;
+  font-family: 'Lato', sans-serif;
+  border-right: 2px solid #000000;
+  padding-right: 8px;
+}
+
+#menuLastElement {
+  border: none;
+}
+
+#cartIconContainer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-width: 80px;
+  max-width: 80px;
+  min-height: 80px;
+  cursor: pointer;
+  background: #37ab3f;
+}
+
+#cartCounter {
+  position: absolute;
+  background: white;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  top: 20px;
+  right: 24px;
+  padding-left: 5px;
+  min-height: 20px;
+  border-radius: 20px;
+  min-width: 20px;
+}
+
+#bannerContainer {
+  display: flex;
+  max-height: 350px;
+  padding-top: 10px;
+}
+
+#bannerImage1 {
+  width: 50%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#bannerImage2 {
+  width: 50%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#overlay {
+  width: 100%;
+  opacity: 0.9;
+  background: whitesmoke;
+  position: absolute;
+}
+
+#overlay p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.genericContainerCentered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.genericContainerCentered input[type=email] {
+  min-width: 300px;
+  margin-left: 40px;
+}
+
+.card-container {
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  min-height: 250px;
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .card-container {
+    display: flex;
+    flex: 50%;
+    min-height: 320px;
+  }
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-container img {
+  max-height: 80px;
+  display: block;
+  margin: auto;
+}
+
+.card {
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  background-color: rgb(232, 253, 255);
+  height: 150px;
+  margin: 10px;
+  border-style: none;
+  width: 200px;
+}
+
+
+.front, .back {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 10pt;
+  top: 0;
+  bottom: 0;
+}
+
+.testimonialName {
+  font-weight: bold;
+  color: #003cff;
+}
+
+.subHeading {
+  color: #003cff;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  color: #003cff;
+  font-family: 'Lato', sans-serif;
+}
+
+.productBannerCatalogueInfo1 h3 a:hover {
+  color: rgb(0, 162, 255);
+  text-decoration: none; 
+  border-bottom: 3px solid rgb(0, 162, 255);
+}
+
+.productBannerCatalogueInfo2 h3 a:hover {
+  color: rgb(0, 162, 255);
+  text-decoration: none; 
+  border-bottom: 3px solid rgb(0, 162, 255);
+}
+
+
+.genericContainer img {
+  height: 25px;
+}
+
+#footerContainer {
+  background: #a4e5ff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Lato', sans-serif;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerTitle {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footerItems {
+  font-size: 12px;
+  padding-top: 6px;
+}
+
+.footerColumn a {
+  cursor: pointer;
+}
+
+.footerColumn a:hover {
+  color: rgb(0, 60, 255);
+  font-style: italic;
+}
+
+footer {
+  box-shadow: -1px -5px 19px 0px rgba(0, 0, 0, 0.81);
+  background: #a4e5ff;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .page-footer .row div {
+    margin-bottom: 20px;
+  }
+}
+
+#copyrightFooter {
+  justify-content: center;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#bannerHome {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  min-height: 350px;
+  background-image: url('../img/bannerhome.jpg');
+  align-items: center;
+  padding-left: 20px;
+}
+
+
+#bannerHome .productBannerCatalogueInfo {
+  display: flex;
+  background: rgb(82, 190, 255);
+  left: 0; 
+  margin-top: 10px; 
+  padding-top: 60px;
+  margin-bottom: 10px; 
+  min-height: 350px; 
+  position: static
+}
+
+.productBannerCatalogueInfo #bannerHomeTitle {
+  font-size: 21px;
+  display: flex;
+  min-width: 100%;
+  padding-left: 0px;
+  flex-direction: column;
+  min-height: 250px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#bannerHomeTitle button {
+  color: white;
+  min-width: 120px;
+  font-family: 'Lato', sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 5px 15px 5px;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #0019f5;
+}
+
+
+@media screen and (max-width: 768px) {
+  #bannerHome {
+    background-image: none;
+    padding-left: 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #bannerHome .productBannerCatalogueInfo {
+    line-height: 1.8;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+    position: static;
+    min-height: 200px;
+    padding-top: 0px;
+    width: 100%
+  }
+
+  #abc111 {
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+
+
+.why-choose {
+  margin-top: 60px; 
+  text-align: center; 
+  text-transform: none; 
+  font-size: 35px;
+}
+
+@media (min-width: 1199px)  {
+  .why-choose {
+    margin-top: 60px; 
+    text-align: center; 
+    text-transform: none; 
+    font-size: 35px;
+  }
+}
+
+.feature-banner-left-section div {
+  padding-top: 100px; 
+  padding-bottom: 0px;
+}
+
+@media (max-width: 1199px) {
+  .feature-banner-left-section div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.feature-header {
+  font-weight: bold;
+}
+
+.feature-explain {
+  font-style: oblique;
+  text-align: justify;
+}
+
+.feature-explain-details {
+  text-align: justify;
+  line-height: 2;
+}
+
+.productCatalogue {
+  flex-direction: column;
+  border: 1px solid #000;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  margin: 5px;
+  max-width: 550px
+}
+
+/* Style inputs,boarder of the textbox */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  text-align: right;
+}
+
+
+
+
+/* Create two columns so that it  float next to eachother, bring your name... up to the right */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.address {
+  font-weight: bold;
+  min-width: 500px;
+  margin-top: 6px;
+  padding: 5px;
+}
+
+#contactFormTelephone {
+  margin-top: 6px;
+  padding-top: 10px;
+}
+
+.message {
+  padding-top: 10px
+}
+
+#formemail {
+  min-width: auto;
+  margin-top: 6px;
+  padding-top: 10px;
+  margin-left: 0;
+  border-radius: 0;
+}
+
+.productBannerCatalogue {
+
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#productBanner1 {
+  background-image: url('../img/search-for-everything.jpeg');
+}
+
+#productBanner2 {
+  background-image: url('../img/banner3.png');
+}
+
+
+
+.productBannerCatalogueInfo1 {
+  background: rgb(145, 219, 254);
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  max-width: 380px;
+  position: relative;
+  min-height: 350px;
+}
+
+
+.productBannerCatalogueInfo2 {
+  background: rgb(145, 219, 254);
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  max-width: 380px;
+  position: relative;
+  left: 720px;
+  min-height: 350px;
+}
+
+
+@media (max-width: 1200px) {
+  .productBannerCatalogueInfo2 {
+    left: 540px;
+  }
+}
+
+@media (max-width: 992px) {
+  .productBannerCatalogueInfo2 {
+    left: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productBannerCatalogueInfo1 {
+    position: relative;
+  }
+  .productBannerCatalogueInfo2 {
+    left: 60px;
+  }
+  #productBanner2 {
+    background-image: none;
+  }
+  #productBanner1 {
+    background-image: none;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .productBannerCatalogueInfo2 {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+
+body {
+  margin: 0 auto;
+  background-color: rgb(232, 253, 255);
+}
+
+/* Subscription Form */
+.subscribe-area {
+background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.subscribe-text span {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+}
+.subscribe-text h2 {
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.subscribe-wrapper {
+    overflow: hidden;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.subscribe-form {
+  margin-left: auto;
+}
+.subscribe2-wrapper .subscribe-form input {
+    background: none;
+    border: 1px solid rgb(0, 26, 255);
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    height: 60px;
+    margin-right: 17px;
+    padding-left: 35px;
+    width: 60%;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.signup::after {
+  border: none;
+  content: none;
+}
+
+.subscribe2-wrapper .subscribe-form button {
+    background: #0059ff;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0;
+    padding: 30px 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.subscribe2-wrapper .subscribe-form button:hover {
+  background-color: blue;
+  color: white
+}
+
+.subscribe2-wrapper .subscribe-form button i {
+    font-size: 18px;
+    padding-left: 5px;
+    color: black
+}
+
+/* End of Subscription Form */
+
+.nav-item {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+.genericContainer {
+  display: flex;
+}
+
+
+#menuLastElement {
+  border: none;
+}
+
+#bannerContainer {
+  display: flex;
+  max-height: 350px;
+  padding-top: 10px;
+}
+
+#bannerImage1 {
+  width: 50%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#bannerImage2 {
+  width: 50%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#overlay {
+  width: 100%;
+  opacity: 0.9;
+  background: whitesmoke;
+  position: absolute;
+}
+
+#overlay p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  color: #383838;
+}
+
+#emailSubscribeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-secondary {
+  color: white;
+  padding: 5px 5px 5px 5px;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #045cff;
+  min-width: max-content;
+}
+
+.button-secondary:hover {
+  color: blue;
+  background-color: whitesmoke;
+}
+
+input[type=email] {
+  padding: 5px 5px 5px 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#emailSubscribeContainer input[type=email] {
+  min-width: 300px;
+  margin-left: 40px;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+
+.testimonial-cards-container {
+  display: block;
+  max-width: min-content;
+  height: 100%;
+  /* flex-direction: row; */
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.genericContainer img {
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+
+#aboutus {
+  padding-left : 20px;
+  padding-right: 20px;
+}
+
+
+
+
+
+/* help bring the box to the right*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs,boarder of the textbox */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded borders */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px; /* Rounded borders */
+  text-align: center;
+}
+
+
+/* Style the container/contact section */
+.container {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Create two columns so that it  float next to eachother, bring your name... up to the right */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+  padding: 60px;
+  font-family: 'Lato', sans-serif;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contactUsText {
+  font-family: 'Lato', sans-serif;
+}
+
+.message {
+  padding-top:10px
+}
+
+input[type=tel] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px; /* Rounded borders */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  margin-left: 0%;
+  resize: vertical;
+}
+
+#mapouter {
+  text-align: right;
+}
+
+
+
+/* Accordion for FAQ page */
+/* .faq-header {
+  font-family: Arial, Verdana;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #0070f0;
+  text-transform: uppercase;
+}
+.accordion-section .panel-default > .panel-heading {
+  border: 0;
+  background: rgb(220, 238, 255);
+  padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+  display: block;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.accordion-section .panel-default .panel-title a:after {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-size: 3rem;
+  content: "\f102";
+  color: #1f7de2;
+  float: right;
+  margin-top: -12px;
+  font-weight: 400;
+}
+
+.accordion-section .panel-default .panel-title a.collapsed:after {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-size: 3rem;
+  color: #1f7de2;
+  float: right;
+  margin-top: -12px;
+  font-weight: 400;
+  content: "\f103";
+
+.accordion-section .panel-default .panel-body {
+  font-size: 1.2rem;
+} */
+/* End of Accordion */
+
+
+.carousel-indicators li{
+	background: #cecece;
+}
+
+.carousel-indicators>.active{
+	background: #ce0000;
+}
+
+.client-desc {
+	text-align: center;
+	font-style: italic;
+}
+
+.client-name {
+	font-size: 18px;
+	text-align: center;
+}
+
+.client-name span {
+	font-weight: bold;
+  color: #ce0000;
+  font-style: italic;
+}
+
+.client-img {
+	padding: 1px;
+	border: 2px solid #ce0000;
+}
+
+.navbar-collapse {
+  background-color:  rgb(232, 253, 255);
+  opacity: 1;
+  padding: 10px;
+}
+
+.nav-item {
+  color: white;
+  padding-right: 20px;
+}
+
+.nav-item:hover {
+  font-weight: bold;
+}
+
+.navbar-collapse ul li input {
+  width: auto;
+  margin-right: 8px;
+}
+
+
+.feature-list {
+  padding-right: 45px;
+  margin-bottom: 85px;
+  position: relative;
+  min-height: 1px;
+}
+
+
+.feature-page2-slider button {
+  color: white;
+  min-width: auto;
+  font-family: 'Lato', sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 5px 15px 5px;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #0019f5;
+}

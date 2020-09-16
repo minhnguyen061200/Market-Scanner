@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/flexslider.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/queries.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"> 
+  
+  
+  <title> Something </title>
+
+  <style>
+    .faq-header {
+  font-family: Arial, Verdana;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #0070f0;
+  text-transform: uppercase;
+}
+.accordion-section .panel-default > .panel-heading {
+  border: 0;
+  background: rgb(220, 238, 255);
+  padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+  display: block;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.accordion-section .panel-default .panel-title a.collapsed span i:after {
+  transform: scale(-1);
+}
+
+.accordion-section .panel-default .panel-body {
+  font-size: 1.2rem;
+}
+  </style>
+</head>
+
+<body onload="updateCartCount();">
+<script src="js/main.js"></script>
+
+
+<!--- Top Navigation Part -->
+<nav class = "navbar navbar-expand-xl navbar-light bg-light">
+  <div>
+  <a class="navbar-brand" href="index.html">
+	<img src="img/ms-logo1.png" alt="Juice Earth Logo" style="margin: 0px;">
+  </a>  
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center sticky-top" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item d-flex flex-row-reverse"> 
+              <a class="nav-link" href="index.html"> Home </a>
+          </li>
+          <li class="nav-item"> 
+              <a class="nav-link d-flex flex-row-reverse" href="features.html"> Features </a>
+          </li>
+          <li class="nav-item"> 
+              <a class="nav-link d-flex flex-row-reverse" href="aboutus.html"> About Us </a>
+          </li>
+          <li class="nav-item active"> 
+              <a class="nav-link d-flex flex-row-reverse" href="faq.html"> FAQ </a>
+          </li>
+          <li class="nav-item"> 
+              <a class="nav-link d-flex flex-row-reverse" href="contactus.html"> Contact Us </a>
+          </li>
+      
+      <li><form class="form-inline justify-content-end">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form></li>
+
+      </ul> 
+  </div>
+</nav>
+
+
+<section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+<div class="container">
+	<img src="img/banner3.jpg" width="100%">
+  <h2 class="faq-header" style="text-align: center;">Frequently Asked Questions </h2>
+  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12", style="float: left;">
+    
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                Why is Market Scanner worth using? <span><i class="fa fa-angle-double-down" style="font-size: 50px; float:right;" aria-hidden="true"></i></span>
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+			<div class="panel-body px-3 mb-4">
+			  <p>With Market Scanner, users will benefit from a finely-tuned technology stack from which they will benefit for their e-commerce experience a variety of marketplaces </p>
+			  <ul>
+				<li>Search for anything of your prefererence from a multitude of our partnered marketplaces</li>
+				<li>Activity management – Add favorite items to your wishlist; Manage orders and purchasing history; any many many more.</li>
+				<li>Get many marketplace accounts linked and synchronised to a single Market Scanner account.</li>
+				<li>Get customised recommendations tailored uniquely for your own purchasing preferences.</li>
+				<li>...</li>
+			  </ul>
+			  <p>We are also the first and only company in Australia that has exclusive partnership with big marketplace 
+				  platforms like Gumtree, Facebook Marketplace, Craigslist, etc. We are granted exclusive access to their 
+				catalogue databases to pull the data that is necessary to help accelerate your searching process</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+				How easy is it to use Market Scanner? <span><i class="fa fa-angle-double-down" style="font-size: 50px; float:right;" aria-hidden="true"></i></span>
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+			<div class="panel-body px-3 mb-4">
+			  	<p>Using Market Scanner is extremely easy. After downloading the application, users
+				just need to login with their Market Scanner accounts to enjoy all of its facilities.</p>
+				<p>*<small>If you have not register, you can sign up <a href="#">here</a>to create a new account </small></p>
+				<p>*<small>You can link your accounts from external marketplace platforms (Gumtree, Facebook
+					Marketplace, Craigslist, etc.) to your Market Scanner account </small></p>
+			
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+				Can I link my Market Scanner to multiple accounts from external marketplaces? <span><i class="fa fa-angle-double-down" style="font-size: 50px; float:right;" aria-hidden="true"></i></span>
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+			<div class="panel-body px-3 mb-4">
+			  <p>Yes, you can!</p>
+			  <p>However, with a single marketplace, you can only link your Market Scanner account to only one account</p>
+			  <p>*<small>For example, you can link your Market Scanner account to only 1 (one) Gumtree account, 1 (one) Craigslist account, etc.</small></p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+				Will I need to pay anything after downloading Market Scanner? Is it totally FREE?<span><i class="fa fa-angle-double-down" style="font-size: 50px; float:right;" aria-hidden="true"></i></span>
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+			<div class="panel-body px-3 mb-4">
+			  <p>You won't need to make any payment to use Market Scanner app</p>
+			  <p>If you make purchases or place orders for an item, you will be redirected to the external site 
+				  where that item was posted. The transaction for purchasing will then be executed on that external site.</p>
+			  </p>			  
+			</div>
+		  </div>
+		</div>
+	</div>
+  </div>
+
+
+  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12", style="float: left;">
+    
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+			<h3 class="panel-title">
+        <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" 
+        href="#collapse00" aria-expanded="true" aria-controls="collapse0">
+          Who does Market Scanner partner with? <span><i class="fa fa-angle-double-down" style="font-size: 50px; float:right;" aria-hidden="true"></i></span>
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse00" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+			<div class="panel-body px-3 mb-4">
+			  <p>It is such an honour for us to be in exclusive partnership with more than 15 marketplace platforms across Australia:</p>
+			  <ul style="display: block;">
+				<div class="row">
+					<li class="col-md-6">Ebay Australia</li>
+					<li class="col-md-6">Amazon Australia</li></div>
+				<div class="row">
+					<li class="col-md-6">GraysOnline</li>
+					<li class="col-md-6">MyDeal</li></div>
+				<div class="row">
+					<li class="col-md-6">Etsy </li>
+					<li class="col-md-6">Kogan </li></div>
+				<div class="row">
+					<li class="col-md-6">Zazzle</li>
+					<li class="col-md-6">MyFruugo</li></div>
+				<div class="row">
+					<li class="col-md-6">Craigslist</li>
+					<li class="col-md-6">The Iconic</li></div>
+				<div class="row">
+					<li class="col-md-6">Catch</li>
+					<li style="float: none;" class="col-md-6"><i>(And many more...)</i></li></div>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="true" aria-controls="collapse1">
+				What is included in the download?<span><i class="fa fa-angle-double-down" style="font-size: 50px; float:right;" aria-hidden="true"></i></span>
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+			<div class="panel-body px-3 mb-4">
+			  <p>Literally all the features and fuctions of Market Scanner.</p>
+			  <p>Once downloaded, Market Scanner can be used to tailor any of your searching preferences in the e-commerce world.</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse22" aria-expanded="true" aria-controls="collapse2">
+				How does Market Scanner take care of privacy and security issues? <span><i class="fa fa-angle-double-down" style="font-size: 50px; float:right;" aria-hidden="true"></i></span>
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+			<div class="panel-body px-3 mb-4">
+			  <p>It is our responsibility to guarantee the safety of you and your information under our policy
+				  All policies regarding privacy and security issues are detailed carefully in the documents of "Privacy and Security Policy".
+			  </p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse33" aria-expanded="true" aria-controls="collapse3">
+				If I get redirected to an external marketplace site, will I need to log in again or create a local-site account?  <span><i class="fa fa-angle-double-down" style="font-size: 50px; float:right;" aria-hidden="true"></i></span>
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse33" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+			<div class="panel-body px-3 mb-4">
+			  <p>The answer is No! Your Market Scanner account can be used to access any marketplace platform that we partner with.</p>
+			</div>
+		  </div>
+		</div>
+	</div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+<div class="ignite-cta text-center">
+    <h2 style="margin: 0; top: 0; text-transform: capitalize;"> Get <span style="text-transform: uppercase;">Market Scanner </span> today!!</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-6 col-sm-6">
+                <a href="product_catalogue.html" class="ignite-btn">Download NOW</a>
+            </div>
+            <div class="col-md-6 col-xs-6 col-sm-6">
+                <a href="product_catalogue.html" class="ignite-btn">Sign Up HERE</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-xs-12 mt-md-0 mt-3">
+            <div class="col-md-12">
+            <img src="img/ms-logo1.png" alt="Juice Earth Logo" style="margin: auto; display: block;">
+            <div class="footerTitle" style="font-size: 18px; font-weight: 900; text-align: center;">Market Scanner</div>
+            <p class="footerItems" style="font-weight: bold;">We are a team that brings the world of e-commerce closer.</p>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+        <div class="col-md-2 col-sm-6 mb-md-0 mb-3">
+            <span class="footerTitle">Explore</span>
+            <ul class="list-unstyled">
+                <li class="footerItems"><a href="index.html">Home</a></li>
+                <li class="footerItems"><a href="features.html">Feature</a></li>
+                <li class="footerItems"><a href="aboutus.html">About Us</a></li>
+                <li class="footerItems"><a href="faq.html">FAQ</a></li>
+                <li class="footerItems"><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-sm-6 mb-md-0 mb-3">
+            <span class="footerTitle">Visit</span>
+            <ul class="list-unstyled">
+                <span class="footerItems">124 La Trobe St,<br>Melbourne<br>VIC 3000</span>
+            </ul>
+        </div>
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-sm-6 mb-md-0 mb-3">
+            <span class="footerTitle">Follow</span>
+            <ul class="list-unstyled">
+                <li class="footerItems"><a href="#!">Blog</a></li>
+                <li class="footerItems"><a href="#!">Facebook</a></li>
+                <li class="footerItems"><a href="#!">Instagram</a></li>
+                <li class="footerItems"><a href="#!">Twitter</a></li>
+                <li class="footerItems"><a href="#!">YouTube</a></li>
+            </ul>
+        </div>
+
+        
+        <!-- Grid column -->
+        <div class="col-md-2 col-sm-6 mb-md-0 mb-3">
+            <span class="footerTitle">Legal</span>
+            <ul class="list-unstyled">
+                <li class="footerItems"><a href="#!">Terms of Use</a></li>
+                <li class="footerItems"><a href="#!">Privacy</a></li>
+                <li class="footerItems"><a href="#!">Security</a></li>
+            </ul>
+        </div>
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+
+    <div class="genericContainer" id="copyrightFooter">
+        <p>&copy; 2020 Market Scanner Ltd.</p>
+    </div>
+
+</footer>
+<!-- Footer -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/waypoints.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/modernizr.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+	background: #fff;
+	background: linear-gradient(
+		60deg, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.6) 100%
+		),
+	url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+.container{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.page-title span{
+	color: #ce0000;
+}
+
+hr{
+	width: 50px;
+	height: 3px;
+	margin-bottom: 50px;
+	background: #ce0000;
+}
+
+.carousel-indicators li{
+	background: #cecece;
+}
+
+.carousel-indicators>.active{
+	background: #ce0000;
+}
+
+.client-desc{
+	text-align: center;
+	font-style: italic;
+}
+
+.client-name{
+	font-size: 18px;
+	text-align: center;
+}
+
+.client-name span{
+	font-weight: bold;
+	color: #ce0000;
+}
+
+.client-img{
+	padding: 1px;
+	border: 2px solid #ce0000;
+}
+
